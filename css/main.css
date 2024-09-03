@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #101010;
+}
+/*start nav*/
+.nav{
+    position: relative;
+    height: 70px;
+}
+.nav .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-abs{
+    position: absolute;
+    top: 20px;
+    left: 13%;
+    border-left: 7px solid #d54ab6;
+    background-color: #202020;
+    max-width: 72%;
+    z-index: 3;
+}
+.navbar{
+    margin: 0 30px;
+    padding: 0;
+}
+.navbar-brand{
+    position: relative;
+}
+.navbar-brand .logo{
+    position: absolute;
+    top: 18px;
+    background-color: #d54ab6;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+.navbar-brand h3{
+    text-transform: uppercase;
+    margin-left: 29px;
+    color: #fff;
+    letter-spacing: -1px;
+}
+.navbar-brand{
+    padding: 15px 0;
+}
+.navbar-nav .nav-item{
+    padding: 18px 10px;
+}
+.navbar-nav .nav-item{
+    text-transform: uppercase;
+}
+.navbar-nav .nav-item a{
+    color: #fff;
+    font-size: 13px;
+}
+.navbar-nav .nav-item:hover,
+.navbar-nav .active{
+    background-color: #333333;
+}
+
+/*end nav*/
+
+/*start carousel*/
+.carousel-inner{
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    height: fit-content;
+    width: fit-content;
+}
+.carousel-caption h3{
+    color: #fff;
+    font-size: 39px;
+    font-weight: 700;
+    text-align: left;
+ }
+.carousel-caption h3 span{
+    text-transform: capitalize;
+}
+/*.slide-img img{
+    width: 100%;
+    
+}
+.slide-img h3 span{
+    text-transform: capitalize;
+}*/
+
+/*end carousel*/
+
+/*start features*/
+
+.features{
+    position: relative;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.features .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    padding: 0 55px;
+}
+.features .container div{
+    width: 30%;
+    padding: 30px 20px;
+    color: #fff;
+    max-width: 30%;
+}
+.features .feat-1{
+    background-color: #c14000;
+}
+.features .feat-2{
+    background-color: #009988;
+}
+.features .feat-3{
+    background-color: #ffa500;
+}
+.features i{
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 20px 0;
+    transition: all 0.5s ease-in-out;
+}
+.features .feat-1:hover i{
+    background-color: #fff;
+    color: #c14000;
+}
+.features .feat-2:hover i{
+    background-color: #fff;
+    color: #009988;
+}
+.features .feat-3:hover i{
+    background-color: #fff;
+    color: #ffa500;
+}
+.features h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.features p{
+    font-size: 15px;
+}
+
+/*end features*/
+
+/*start startup*/
+.startup{
+    padding-bottom: 40px;
+}
+.startup .start-item{
+    padding: 0 20px;
+}
+
+.startup .info{
+    background-color: #191919;
+    color: #fff;
+    padding: 20px 30px;
+    position: relative;
+    min-height: 320px;
+}
+.startup img{
+    padding: 0;
+}
+.startup .info h3{
+    font-weight: 700;
+    padding: 10px 0;
+}
+.startup .info p{
+    color: #777;
+    font-size: 15px;
+}
+.startup .info span{
+    position: absolute;
+    bottom: 40px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.startup .info span:hover{
+    background-color: #fff;
+    color: #000000;
+    border: 2px solid #000;
+}
+
+/*end startup*/
+
+/*start project*/
+.project{
+    padding: 40px;
+}
+.project h3{
+    font-weight: 700;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: capitalize;
+}
+.project p{
+    color: #777;
+    font-size: 15px;
+    padding: 15px 0;
+}
+.gallary .main a,
+.gallary .sub a{
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+.gallary .main a::after,
+.gallary .sub a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: #777;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+.gallary .main a:hover,
+.gallary .sub a:hover{
+    transform: scaleY(1.1);
+    z-index: 20;
+}
+.gallary .sub a:hover::after,
+.gallary .main a:hover::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00e";
+    font-size: 40px;
+    color: #fff;
+    opacity: 0.5;
+}
+.gallary .main a{
+    height: 300px;
+}
+.gallary .sub a{
+    height: 200px;
+}
+.project span{
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 40px 0;
+    transition: all .5s ease-in-out;
+}
+.project .hover:hover{
+    background-color: #fff;
+    color: #000000;
+    border: 2px solid #000;
+}
+
+.project .hidden-gallary{
+    display: none;
+}
+
+/*end project*/
+
+/*start footer*/
+.upper-footer{
+    background-color: #252729;
+    color: #777;
+    padding: 40px 0;
+}
+.upper-footer h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 15px 0;
+}
+.upper-footer p{
+    font-size: 14px;
+}
+.upper-footer .contact{
+    padding-bottom: 10px;
+}
+.upper-footer .contact i{
+    float: left;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.upper-footer .contact h4{
+    font-size: 16px;
+}
+.upper-footer .links ul{
+    list-style: none;
+    padding: 0;
+}
+.upper-footer .links ul li{
+    padding-bottom: 10px;
+}
+.upper-footer .logo{
+    top: 16px;
+    width: 25px;
+    height: 25px;
+}
+.upper-footer .navbar-brand h3{
+    padding: 0;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.upper-footer .row .col{
+    padding: 0 30px;
+}
+.upper-footer .news input,
+.upper-footer .news button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+    width: 90%;
+}
+.upper-footer .news input::placeholder{
+    font-size: 15px;
+    color: #fff;
+}
+.upper-footer .news button{
+    margin: 9px 0;
+    width: 30%;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+.upper-footer .news button:hover{
+    background-color: #fff;
+    color: #000000;
+    border: 2px solid #000;
+}
+.copyrights{
+    padding: 25px 0;
+}
+.copyright-footer{
+    color: #777;
+    font-size: 14px
+}
+.copyrights .footer-menu > ul{
+    list-style-type: none;
+    padding: 0;
+    float: left;
+}
+.copyrights .footer-menu > ul > li{
+    display: inline-block;
+    background-color: #202020;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 0;
+    transition: all .5s ease-in-out;
+}
+.copyrights .footer-menu > ul >li >a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #919191;
+    transition: all .5s ease-in-out;
+}
+.copyrights .footer-menu >ul >li:hover{
+    background-color:#d54ab6;
+}
+.copyrights .footer-menu > ul >li:hover a{
+    color: #fff;
+}
+/*end footer*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .features {
+        height: 1150px;
+    }
+    .features .container div{
+        max-width: 100%;
+        margin: 10px 0;
+    } 
+    .features h3 {
+        font-size: 22px;
+    }
+    .startup .info {
+        min-height: 500px;
+    }
+    .startup .info span{
+        left: 35%;
+    }
+    .navbar{
+        margin: 0 10px;
+    }
+    .navbar-brand h3{
+        font-size: 20px;
+        margin-left: 22px;
+    }
+    .navbar-brand .logo {
+        top: 16px;
+        width: 22px;
+        height: 22px;
+    }
+    .upper-footer .news button {
+        width: 45%;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+      .features {
+        height: 1050px;
+    }
+    .features .container div{
+        max-width: 100%;
+        margin: 10px 0;
+    } 
+    .startup .info {
+        min-height: 350px;
+    }
+    .startup .info span{
+        left: 35%;
+    }
+    
+    .upper-footer .news button {
+        width: 45%;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .features .container{
+        max-width: 88%;
+    }
+    .startup .col{
+        max-width: 50%;
+        
+    }
+    .upper-footer .news button {
+    width: 45%;
+    }
+    .features .container {
+        padding: 0;
+     }
+}
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
